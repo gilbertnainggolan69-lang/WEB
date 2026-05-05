@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GILBERT EXPLOITZ | PREMIUM SCRIPT HUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700;800;900&display=swap');
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Rajdhani', sans-serif;
+            background-image: radial-gradient(circle at center, #1a0000 0%, #000 100%);
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Navbar Style Persis Gambar */
+        .nav-glass {
+            background: rgba(10, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+        }
+
+        .cart-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
+            padding: 8px 20px;
+        }
+
+        /* Badge Section */
+        .badge-item {
+            background: rgba(255, 0, 0, 0.05);
+            border: 1px solid rgba(255, 0, 0, 0.3);
+            border-radius: 30px;
+            padding: 6px 18px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Title Glow */
+        .main-title {
+            font-size: 5rem;
+            line-height: 0.9;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+            letter-spacing: -2px;
+        }
+
+        /* Main Buttons */
+        .btn-red-grad {
+            background: linear-gradient(90deg, #ff0000, #800000);
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+            transition: 0.3s;
+        }
+        .btn-red-grad:hover { transform: scale(1.03); box-shadow: 0 0 40px #ff0000; }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        /* Pricing Card */
+        .card-glass {
+            background: rgba(15, 0, 0, 0.9);
+            border: 1px solid #500;
+            border-radius: 24px;
+            transition: 0.4s;
+        }
+        .card-glass:hover {
+            border-color: #f00;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+            transform: translateY(-10px);
+        }
+
+        /* Floating WA */
+        .floating-wa {
+            position: fixed; right: 25px; bottom: 30px; z-index: 100;
+            width: 65px; height: 65px; border-radius: 50%;
+            background: #25d366; display: flex; align-items: center; justify-content: center;
+            font-size: 35px; box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+            transition: 0.3s; color: white;
+        }
+    </style>
+</head>
+<body class="pb-20">
+
+    <!-- NAVBAR ATAS (PERSIS GAMBAR) -->
+    <nav class="nav-glass sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="https://i.ibb.co/vzB7pL8/anon.jpg" class="w-12 h-12 rounded-xl border border-red-600 object-cover shadow-[0_0_10px_red]">
+            <div>
+                <h2 class="text-xl font-bold leading-none text-white tracking-tighter">GilbertExploits</h2>
+                <p class="text-[10px] text-red-500 font-bold uppercase tracking-widest">Premium Script Hub</p>
+            </div>
+        </div>
+        <div class="cart-box flex items-center gap-3">
+            <i class="fas fa-shopping-cart text-white"></i>
+            <span class="font-bold">0</span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (PERSIS GAMBAR) -->
+    <div class="flex flex-col items-center text-center mt-12 px-6">
+        <div class="flex gap-3 mb-4">
+            <div class="badge-item"><i class="fas fa-fire text-orange-500 mr-2"></i> HOT</div>
+            <div class="badge-item"><i class="fas fa-bolt text-yellow-500 mr-2"></i> 1000+ Users</div>
+        </div>
+        <div class="badge-item mb-10"><i class="fas fa-shield-alt text-blue-500 mr-2"></i> Anti-Ban</div>
+
+        <h1 class="main-title mb-4 italic">GILBERT<br>EXPLOITZ</h1>
+        <h3 class="text-red-500 font-bold text-xl mb-6">Premium Roblox Script Hub</h3>
+        <p class="max-w-xs mx-auto text-gray-400 text-sm leading-relaxed mb-12 italic">
+            Dominasi setiap game dengan script executor terbaik dan paling aman di Indonesia. Undetected, unlimited features!
+        </p>
+
+        <!-- Tombol Utama Sesuai Gambar -->
+        <div class="w-full max-w-xs space-y-4 mb-24">
+            <a href="#pricing" class="btn-red-grad w-full py-4 flex items-center justify-center gap-2 font-bold text-lg italic uppercase">
+                🚀 LIHAT PAKET
+            </a>
+            <a href="https://wa.me/6285757728586" class="btn-outline w-full py-4 flex items-center justify-center gap-2 font-bold text-lg text-gray-300">
+                <i class="fas fa-comment-dots"></i> HUBUNGI KAMI
+            </a>
+        </div>
+    </div>
+
+    <!-- PRICING SECTION (10 FITUR) -->
+    <div id="pricing" class="grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto px-6 mb-32">
+        <!-- PAKET 1 -->
+        <div class="card-glass p-8 text-center">
+            <h3 class="text-2xl font-black text-gray-400">10 DAYS ACCESS</h3>
+            <h4 class="text-6xl font-black text-red-600 my-6">50K</h4>
+            <div class="space-y-3 mb-10 text-left text-[13px] border-t border-red-950 pt-6">
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Spam Remote Event</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Fake Donate Message</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> ESP Player & Item</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Walkspeed & JumpPower</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Noclip System</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Auto-Farm Basic</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Server Hopper</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Anti-AFK Detection</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Secure Injection</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Daily Script Update</div>
+            </div>
+            <a href="https://wa.me/6285757728586?text=Halo%20Gilbert,%20beli%2010%20HARI" class="btn-red-grad block w-full py-4 rounded-xl font-black text-center italic uppercase">BUY NOW</a>
+        </div>
+
+        <!-- PAKET 2 (MOST POPULAR) -->
+        <div class="card-glass p-8 text-center border-red-500 scale-105 shadow-[0_0_50px_rgba(255,0,0,0.3)]">
+            <div class="absolute top-0 right-0 bg-red-600 text-black px-4 py-1 font-bold text-xs rounded-bl-xl">POPULAR</div>
+            <h3 class="text-2xl font-black text-white">40 DAYS ACCESS</h3>
+            <h4 class="text-6xl font-black text-red-600 my-6">100K</h4>
+            <div class="space-y-3 mb-10 text-left text-[13px] border-t border-red-950 pt-6 font-bold">
+                <div class="flex items-center gap-3 text-red-500"><i class="fas fa-skull"></i> ALL VIP FEATURES</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Bypass Map Security</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Admin Command Access</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Kill All Player System</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> God Mode Immortal</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Crash Server Method</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Steal Item/Asset</div>
+                <div class="flex items-center gap-3 text-red-500"><i class="fas fa-shield-alt"></i> ELITE ANTI-BAN</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> VIP Chat Support</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Remote Spy Tools</div>
+            </div>
+            <a href="https://wa.me/6285757728586?text=Halo%20Gilbert,%20beli%20VIP%2040%20HARI" class="btn-red-grad block w-full py-4 rounded-xl font-black text-center italic uppercase">BUY NOW</a>
+        </div>
+
+        <!-- PAKET 3 -->
+        <div class="card-glass p-8 text-center">
+            <h3 class="text-2xl font-black text-gray-400">LIFETIME ACCESS</h3>
+            <h4 class="text-6xl font-black text-red-600 my-6">200K</h4>
+            <div class="space-y-3 mb-10 text-left text-[13px] border-t border-red-950 pt-6">
+                <div class="flex items-center gap-3"><i class="fas fa-infinity text-red-600"></i> PERMANENT KEY</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Private Custom Script</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Source Code Access</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Developer Dashboard</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> No Log Privacy</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Unban System Tool</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> HWID Spoofer</div>
+                <div class="flex items-center gap-3 text-red-500 font-bold"><i class="fas fa-crown"></i> OWNER PRIORITY</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> All Premium Unlocked</div>
+                <div class="flex items-center gap-3"><i class="fas fa-check text-red-600"></i> Early Update Access</div>
+            </div>
+            <a href="https://wa.me/6285757728586?text=Halo%20Gilbert,%20beli%20PERMANENT" class="btn-red-grad block w-full py-4 rounded-xl font-black text-center italic uppercase">BUY NOW</a>
+        </div>
+    </div>
+
+    <!-- KENAPA HARUS KAMI (5 KOTAK) -->
+    <div class="max-w-7xl mx-auto px-6 py-24 border-t border-red-900/30">
+        <h2 class="text-4xl font-black text-center mb-16 glow-red italic tracking-widest uppercase italic">KENAPA HARUS KAMI?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+            <div class="card-glass p-6 text-center border-red-900/40">
+                <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-[0_0_15px_#f00]"><i class="fas fa-shield-alt text-2xl text-black"></i></div>
+                <h5 class="font-black text-red-500 mb-2 uppercase italic tracking-tighter">ANTI-BAN</h5>
+                <p class="text-[11px] text-gray-400">System bypass tingkat dewa, aman dari deteksi.</p>
+            </div>
+                        <!-- Sambungan Kotak 2 -->
+            <div class="card-glass p-6 text-center border-red-900/40">
+                <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-[0_0_15px_#f00]"><i class="fas fa-bolt text-2xl text-black"></i></div>
+                <h5 class="font-black text-red-500 mb-2 uppercase italic tracking-tighter">INSTANT</h5>
+                <p class="text-[11px] text-gray-400">Sekali klik script langsung aktif bantai server.</p>
+            </div>
+            <!-- Kotak 3 -->
+            <div class="card-glass p-6 text-center border-red-900/40">
+                <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-[0_0_15px_#f00]"><i class="fas fa-sync text-2xl text-black"></i></div>
+                <h5 class="font-black text-red-500 mb-2 uppercase italic tracking-tighter">UPDATE</h5>
+                <p class="text-[11px] text-gray-400">Selalu update ngikutin patch game terbaru.</p>
+            </div>
+            <!-- Kotak 4 -->
+            <div class="card-glass p-6 text-center border-red-900/40">
+                <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-[0_0_15px_#f00]"><i class="fas fa-users text-2xl text-black"></i></div>
+                <h5 class="font-black text-red-500 mb-2 uppercase italic tracking-tighter">TRUSTED</h5>
+                <p class="text-[11px] text-gray-400">Ribuan user aktif setiap hari di seluruh Indonesia.</p>
+            </div>
+            <!-- Kotak 5 -->
+            <div class="card-glass p-6 text-center border-red-900/40">
+                <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-[0_0_15px_#f00]"><i class="fas fa-headset text-2xl text-black"></i></div>
+                <h5 class="font-black text-red-500 mb-2 uppercase italic tracking-tighter">SUPPORT</h5>
+                <p class="text-[11px] text-gray-400">Admin standby 24 jam bantu masalah lu.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER EXPLOIT INDONESIA 🇮🇩 -->
+    <footer class="text-center py-24 border-t border-red-900/30">
+        <h2 class="text-5xl font-black italic tracking-widest text-white mb-2 uppercase glow-red">GILBERT EXPLOITZ</h2>
+        <p class="text-red-600 font-bold text-2xl tracking-[8px] uppercase">EXPLOIT INDONESIA 🇮🇩</p>
+        
+        <p class="text-gray-800 text-[10px] mt-16 tracking-[4px] uppercase font-bold italic">
+            MASTER RIAN &copy; 2026 - POWERED BY NIGHTMARE-7
+        </p>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/6285757728586" class="floating-wa">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="scan-line" style="position: fixed; top: 0; left: 0; width: 100%; height: 2px; background: #ff0000; box-shadow: 0 0 20px #ff0000; animation: scanMove 4s linear infinite; z-index: 9999; pointer-events: none;"></div>
+    
+    <style>
+        @keyframes scanMove { 0% { top: 0; } 100% { top: 100vh; } }
+    </style>
+
+</body>
+</html>
